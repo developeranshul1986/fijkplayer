@@ -81,7 +81,7 @@ class __FijkPanel2State extends State<_FijkPanel2> {
   FijkPlayer get player => widget.player;
 
   Timer _hideTimer;
-  bool _hideStuff = false;
+  bool _hideStuff = true;
 
   Timer _statelessTimer;
   bool _prepared = false;
@@ -481,14 +481,14 @@ class __FijkPanel2State extends State<_FijkPanel2> {
       onVerticalDragStart: onVerticalDragStartFun,
       onVerticalDragEnd: onVerticalDragEndFun,
       onHorizontalDragUpdate: (d) {},
-      child: AbsorbPointer(
-        absorbing: _hideStuff,
-        child: AnimatedOpacity(
-          opacity: _hideStuff ? 0 : 1,
-          duration: Duration(milliseconds: 300),
+ //    child: AbsorbPointer(
+ //    absorbing: _hideStuff,
+ //    child: AnimatedOpacity(
+ //       opacity: _hideStuff ? 0 : 1,
+ //       duration: Duration(milliseconds: 300),
           child: buildPanel(context),
-        ),
-      ),
+ //      ),
+ //     ),
     );
   }
 
