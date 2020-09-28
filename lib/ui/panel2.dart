@@ -81,7 +81,7 @@ class __FijkPanel2State extends State<_FijkPanel2> {
   FijkPlayer get player => widget.player;
 
   Timer _hideTimer;
-  bool _hideStuff = true;
+  bool _hideStuff = false;
 
   Timer _statelessTimer;
   bool _prepared = false;
@@ -198,20 +198,20 @@ class __FijkPanel2State extends State<_FijkPanel2> {
 
   void _restartHideTimer() {
     _hideTimer?.cancel();
-    _hideTimer = Timer(Duration(milliseconds: widget.hideDuration), () {
-      setState(() {
-        _hideStuff = true;
-      });
-    });
+  //  _hideTimer = Timer(Duration(milliseconds: widget.hideDuration), () {
+  //    setState(() {
+  //      _hideStuff = true;
+  //    });
+  //  });
   }
 
   void onTapFun() {
-    if (_hideStuff == true) {
-      _restartHideTimer();
-    }
-    setState(() {
-      _hideStuff = !_hideStuff;
-    });
+ //   if (_hideStuff == true) {
+ //     _restartHideTimer();
+ //   }
+ //   setState(() {
+ //     _hideStuff = !_hideStuff;
+ //   });
   }
 
   void playOrPause() {
