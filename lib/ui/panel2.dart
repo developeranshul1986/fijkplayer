@@ -81,7 +81,7 @@ class __FijkPanel2State extends State<_FijkPanel2> {
   FijkPlayer get player => widget.player;
 
   Timer _hideTimer;
-  bool _hideStuff = true;
+  bool _hideStuff = false;
 
   Timer _statelessTimer;
   bool _prepared = false;
