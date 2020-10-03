@@ -125,13 +125,13 @@ class __FijkPanel2State extends State<_FijkPanel2> {
     _bufferPos = player.bufferPos;
 
     _currentPosSubs = player.onCurrentPosUpdate.listen((v) {
- //     if (_hideStuff == false) {
+     if (_hideStuff == false) {
        setState(() {
          _currentPos = v;
        });
-//      } else {
-//         _currentPos = v;
- //     }
+      } else {
+        _currentPos = v;
+      }
       if (_needClearSeekData) {
         widget.data.clearValue(FijkData._fijkViewPanelSeekto);
       }
@@ -144,13 +144,13 @@ class __FijkPanel2State extends State<_FijkPanel2> {
     }
 
     _bufferPosSubs = player.onBufferPosUpdate.listen((v) {
-  //    if (_hideStuff == false) {
+     if (_hideStuff == false) {
         setState(() {
          _bufferPos = v;
        });
-  //    } else {
- //       _bufferPos = v;
-  //    }
+      } else {
+       _bufferPos = v;
+      }
     });
 
     player.addListener(_playerValueChanged);
@@ -176,13 +176,13 @@ class __FijkPanel2State extends State<_FijkPanel2> {
     FijkValue value = player.value;
 
     if (value.duration != _duration) {
-    //  if (_hideStuff == false) {
+      if (_hideStuff == false) {
        setState(() {
          _duration = value.duration;
        });
-   //   } else {
-     //   _duration = value.duration;
-   //   }
+     } else {
+       _duration = value.duration;
+     }
     }
     bool playing = (value.state == FijkState.started);
     bool prepared = value.prepared;
