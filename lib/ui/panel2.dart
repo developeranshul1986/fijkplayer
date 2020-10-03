@@ -127,7 +127,7 @@ class __FijkPanel2State extends State<_FijkPanel2> {
     _currentPosSubs = player.onCurrentPosUpdate.listen((v) {
  //     if (_hideStuff == false) {
   //      setState(() {
-          _currentPos = v;
+     //     _currentPos = v;
  //       });
 //      } else {
         _currentPos = v;
