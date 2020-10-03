@@ -177,11 +177,11 @@ class __FijkPanel2State extends State<_FijkPanel2> {
 
     if (value.duration != _duration) {
     //  if (_hideStuff == false) {
-   //     setState(() {
-  //        _duration = value.duration;
-  //      });
+       setState(() {
+         _duration = value.duration;
+       });
    //   } else {
-        _duration = value.duration;
+     //   _duration = value.duration;
    //   }
     }
     bool playing = (value.state == FijkState.started);
