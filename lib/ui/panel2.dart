@@ -209,6 +209,7 @@ class __FijkPanel2State extends State<_FijkPanel2> {
  //   if (_hideStuff == true) {
  //     _restartHideTimer();
  //   }
+      
  //   setState(() {
  //     _hideStuff = !_hideStuff;
  //   });
