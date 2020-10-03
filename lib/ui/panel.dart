@@ -215,7 +215,7 @@ class _DefaultFijkPanelState extends State<_DefaultFijkPanel> {
             Padding(
               padding: EdgeInsets.only(right: 5.0, left: 5),
               child: Text(
-                '${_duration2String(_currentPos)}',
+                '${_duration2String(_currentPos)}_11',
                 style: TextStyle(fontSize: 14.0),
               ),
             ),
