@@ -125,13 +125,13 @@ class __FijkPanel2State extends State<_FijkPanel2> {
     _bufferPos = player.bufferPos;
 
     _currentPosSubs = player.onCurrentPosUpdate.listen((v) {
-      if (_hideStuff == false) {
-        setState(() {
+ //     if (_hideStuff == false) {
+  //      setState(() {
           _currentPos = v;
-        });
-      } else {
+ //       });
+//      } else {
         _currentPos = v;
-      }
+ //     }
       if (_needClearSeekData) {
         widget.data.clearValue(FijkData._fijkViewPanelSeekto);
       }
@@ -144,13 +144,13 @@ class __FijkPanel2State extends State<_FijkPanel2> {
     }
 
     _bufferPosSubs = player.onBufferPosUpdate.listen((v) {
-      if (_hideStuff == false) {
-        setState(() {
-          _bufferPos = v;
-        });
-      } else {
+  //    if (_hideStuff == false) {
+ //       setState(() {
+ //         _bufferPos = v;
+  //      });
+  //    } else {
         _bufferPos = v;
-      }
+  //    }
     });
 
     player.addListener(_playerValueChanged);
