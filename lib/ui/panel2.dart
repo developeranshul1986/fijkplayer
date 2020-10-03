@@ -327,7 +327,7 @@ class __FijkPanel2State extends State<_FijkPanel2> {
 
   Widget buildTimeText(BuildContext context, double height) {
     String text =
-        "${_duration2String(_currentPos)}_11" + "/${_duration2String(_duration)}";
+        "${_duration2String(_currentPos)}" + "/${_duration2String(_duration)}";
     return Text(text, style: TextStyle(fontSize: 12, color: Color(0xFFFFFFFF)));
   }
 
